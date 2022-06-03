@@ -12,13 +12,15 @@ ERROR -> 40
 CRITICAL -> 50
 """
 
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.INFO)
+
+def main():
+    logging.info(unreleased())
 
 if __name__ == '__main__':
     logging.debug('\n>>> Se está comenzando la ejecución del paquete.\n')
 
-    workshops = unreleased()
-    logging.debug(workshops)
+    main()
 
     logging.debug('\n>>> Dos visualizaciones sobre el docstring.\n')
     logging.debug(unreleased.__doc__)

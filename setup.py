@@ -4,7 +4,7 @@ from setuptools import setup
 this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
-VERSION = '0.1.0'
+VERSION = '0.2.0'
 DESCRIPTION = 'Este paquete permite consumir el API de CódigoFacilito.'
 PACKAGE_NAME = 'cf_iillpackage'
 AUTHOR = 'Isaac Isaías López López'
@@ -14,6 +14,10 @@ GITHUB_URL = 'https://github.com/IsaacIsaias/cf-iillpackage'
 setup(
     name = PACKAGE_NAME,
     packages = [PACKAGE_NAME],
+    entry_points = {
+        "console_scripts": 
+            ["pycody=cf_iillpackage.__main__:main"]
+    },
     version = VERSION,
     license='MIT',
     description = DESCRIPTION,
