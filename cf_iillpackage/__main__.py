@@ -1,9 +1,23 @@
+import logging
+
 from cf_iillpackage import unreleased
 
+"""
+LOGGING
+
+INFO -> 10
+DEBUG -> 20
+WARNING -> 30
+ERROR -> 40
+CRITICAL -> 50
+"""
+
+logging.basicConfig(level=logging.DEBUG)
+
 if __name__ == '__main__':
-    print('\n>>> Se está comenzado la ejecución del paquete.\n')
+    logging.debug('\n>>> Se está comenzando la ejecución del paquete.\n')
 
     workshops = unreleased()
-    print(workshops)
+    logging.debug(workshops)
 
-    print('\n>>> Se está finalizando la ejecución del paquete.')
+    logging.debug('\n>>> Se está finalizando la ejecución del paquete.')
