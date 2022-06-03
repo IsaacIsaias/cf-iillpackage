@@ -2,7 +2,10 @@ import requests
 
 def unreleased():
     """
-        Realizar la petición y retornar el objeto JSON.
+        Realiza la petición y retorna los próximos talleres en CódigoFacilito a través de un objeto JSON.
+
+        >>> type(unreleased()) == type(dict())
+        True
     """
     response = requests.get('https://codigofacilito.com/api/v2/workshops/unreleased') # Consumir un API
     

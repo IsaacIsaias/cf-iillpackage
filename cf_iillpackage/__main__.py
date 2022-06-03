@@ -20,4 +20,8 @@ if __name__ == '__main__':
     workshops = unreleased()
     logging.debug(workshops)
 
+    logging.debug('\n>>> Dos visualizaciones sobre el docstring.\n')
+    logging.debug(unreleased.__doc__)
+    logging.debug(help(unreleased))
+
     logging.debug('\n>>> Se está finalizando la ejecución del paquete.')
