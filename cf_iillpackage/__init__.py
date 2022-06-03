@@ -1,1 +1,2 @@
-print("Bienvenido, nos encontramos en el paquete.")
+# from cf_iillpackage.workshops import unreleased
+from .workshops import unreleased
