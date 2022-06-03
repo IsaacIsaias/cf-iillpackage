@@ -1,2 +1,5 @@
+from cf_iillpackage.workshops import unreleased
+
 if __name__ == '__main__':
-    pass
+    workshops = unreleased()
+    print(workshops)
